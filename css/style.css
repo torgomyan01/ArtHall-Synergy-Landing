@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap");
+::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  border-radius: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #3d3d3d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3d3d3d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Fira Sans Condensed", sans-serif;
+  color: #1C1C1C;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1600px;
+}
+
+.trans {
+  transition: 0.3s;
+}
+
+.btn {
+  border-radius: 6px;
+}
+
+.font-fira-sans {
+  font-family: Fira Sans, serif;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  height: 103px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.7);
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.btn-gradient {
+  background: linear-gradient(98.3deg, rgb(209, 82, 192) 23.229%, rgb(106, 108, 222) 53.227%);
+  color: #fff;
+  background-size: 130%;
+  transition: 0.3s;
+  padding: 13px 24px 13px 24px;
+  text-transform: uppercase;
+}
+.btn-gradient:hover {
+  color: #fff;
+  background-size: 190%;
+}
+
+.btn-black {
+  text-transform: uppercase;
+  color: #fff;
+  background: rgb(28, 28, 28);
+  transition: 0.3s;
+  padding: 13px 24px 13px 24px;
+}
+.btn-black:hover {
+  color: #fff;
+  background: rgb(40, 40, 40);
+}
+
+header {
+  width: 100%;
+  height: 1150px;
+  background: url("../images/header-bg.png") no-repeat center top;
+  background-size: 3476px auto;
+}
+
+.text-gradient {
+  background: linear-gradient(98.3deg, rgb(209, 82, 192), rgb(106, 108, 222));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.sale {
+  width: 100%;
+  height: 240px;
+  background: rgb(255, 255, 255);
+  color: rgb(28, 28, 28);
+  font-family: "Fira Sans", sans-serif;
+  position: relative;
+  margin-top: -340px;
+  margin-bottom: 170px;
+}
+.sale-blackBg {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30%;
+  background: rgba(28, 28, 28, 0.96);
+  color: #fff;
+  margin-right: 63px;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 180px;
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.sale-blackBg:before {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+.sale-percent {
+  color: rgb(255, 255, 255) !important;
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 38%;
+  background-color: #252525;
+  min-height: 240px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  position: relative;
+}
+.sale-percent-ellipse {
+  position: absolute;
+  left: -350px;
+  top: -150px;
+}
+.sale-text {
+  color: rgb(28, 28, 28);
+  font-family: Fira Sans, serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 43px;
+  max-width: 802px;
+}
+
+.how-working-famousArtist {
+  margin-top: -158px;
+}
+
+.about-us {
+  background: rgba(28, 28, 28, 0.96);
+  width: 100%;
+  margin-top: 80px;
+  padding: 47px 0;
+}
+.about-us-blur {
+  position: absolute;
+  right: -620px;
+  top: -450px;
+  z-index: -1;
+}
+.about-us-ellipse {
+  position: absolute;
+  right: -410px;
+  bottom: -340px;
+  width: 498px;
+  height: 498px;
+}
+
+.online-texts {
+  margin-right: -50px;
+}
+
+.selection-process .container {
+  position: relative;
+}
+.selection-process-fon {
+  position: absolute;
+  top: 80px;
+  width: calc(100% + 300px);
+  left: -150px;
+}
+.selection-process-item {
+  border-radius: 12px;
+  padding: 30px;
+  background: rgb(255, 255, 255);
+  position: relative;
+  height: 169px;
+}
+.selection-process-item-count {
+  color: rgb(28, 28, 28);
+  font-size: 120px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  right: 40px;
+  top: -90px;
+}
+
+/*# sourceMappingURL=style.css.map */
