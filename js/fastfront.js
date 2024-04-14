@@ -9,6 +9,8 @@ const hovers = document.createElement('STYLE');
 const colors = {
     white: '#FFFFFF',
     black: '#1C1C1C',
+    pink: '#E869E0',
+    purple: '#7069E1',
 }
 
 
@@ -45,6 +47,7 @@ const costs = {
     paddingY: 'py-',
     flexGap: 'gap-',
     colPercent: 'colPercent-',
+    borderWidth: 'bWidth-',
 }
 const allElem = document.querySelectorAll('*');
 const head = document.head;
@@ -80,6 +83,7 @@ const classTypes = [
     // FONT SIZE
     {minClass: 'fs-', styleName: 'font-size'},
     {minClass: 'br-', styleName: 'border-radius'},
+    {minClass: costs.borderWidth, styleName: 'border-width'},
     {minClass: 'roundLeftTop-', styleName: 'border-top-left-radius'},
     {minClass: 'roundLeftBottom-', styleName: 'border-bottom-left-radius'},
     {minClass: 'roundRightBottom-', styleName: 'border-bottom-right-radius'},

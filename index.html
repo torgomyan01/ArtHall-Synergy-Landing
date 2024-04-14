@@ -17,247 +17,416 @@
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!--  ICONS-->
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="icons/style.css">
   <link rel="stylesheet" href="css/style.css">
 
   <script src="js/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <title>ArtHall Synergy Landing</title>
 </head>
 <body>
 
-<div class="navbar">
- <div class="container d-flex justify-content-between align-items-center">
-   <a href="#" class="navbar-logo">
-     <img src="images/logo-site.svg" alt="Logo Site" width="233" height="64">
-   </a>
-   <div class="d-flex justify-content-end align-items-center">
-     <a href="#" class="navbar-item c-black me-53 fs-20 text-uppercase fw-500">
-       Как это работает
-     </a>
-     <a href="#" class="navbar-item c-black me-53 fs-20 text-uppercase fw-500">
-       стать участником
-     </a>
-     <a href="#" class="navbar-item c-black me-53 fs-20 text-uppercase fw-500">
-       СМИ О НАС
-     </a>
+<div class="overflow-hidden">
 
-     <button class="btn btn-gradient fs-20 me-15">
-       СТАТЬ УЧАСТНИКОМ
-     </button>
-     <button class="btn btn-black fs-20">
-       Войти
-     </button>
-   </div>
- </div>
-</div>
+  <div class="navbar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="#" class="navbar-logo">
+        <img src="images/logo-site.svg" alt="Logo Site" width="233" height="64" class="w-166 w-md-233">
+      </a>
+      <div class="d-flex justify-content-end align-items-center">
+        <a href="#" class="navbar-item c-black me-12 me-xl-53 fs-20 text-uppercase fw-500 d-none d-lg-block">
+          Как это работает
+        </a>
+        <a href="#" class="navbar-item c-black me-12 me-xl-53 fs-20 text-uppercase fw-500 d-none d-lg-block">
+          стать участником
+        </a>
+        <a href="#" class="navbar-item c-black me-12 me-xl-53 fs-20 text-uppercase fw-500 d-none d-lg-block">
+          СМИ О НАС
+        </a>
 
-<header>
-
-  <div class="container pt-220">
-    <div class="row ">
-      <div class="col-6">
-        <h1 class="fs-80 c-black text-uppercase">
-          Онлайн акселератор <br>
-          для <span class="text-gradient">художников</span>
-        </h1>
-        <h3 class="mt-45 fs-32">
-          Помогаем талантливым художникам <br>
-          стать звездами
-        </h3>
-        <button class="btn btn-black mt-50 fs-30 px-5">
+        <button class="btn btn-gradient fs-20 me-15 d-none d-md-block">
           СТАТЬ УЧАСТНИКОМ
         </button>
-      </div>
-      <div class="col-6">
-        <img src="images/Woman-drawing-on-a-graphic-tablet.png" alt="Woman drawing on a graphic tablet"
-             width="1283"
-             height="684"
-             class="w-100 h-auto mt-50">
+        <button class="btn btn-black fs-20 d-none d-md-block">
+          Войти
+        </button>
+        <button class="btn btn-gradient fs-20 me-15 d-block d-md-none pt-8 pe-20 pb-8 ps-20">
+          Войти
+        </button>
+        <div class="mobile-menu-board">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </div>
   </div>
 
-</header>
+  <div class="mobile-menu">
+    <div class="container">
+      <div class="mb-28">
+        <a href="#" class="c-black fs-20 mb-3 text-uppercase fw-500">Как работает платформа</a>
+      </div>
+      <div class="mb-28">
+        <a href="#" class="c-black fs-20 mb-3 text-uppercase fw-500">Как проходит отбор</a>
+      </div>
+      <div class="mb-28">
+        <a href="#" class="c-black fs-20 mb-3 text-uppercase fw-500">СМИ о нас</a>
+      </div>
+      <button class="btn btn-gradient fs-20 me-15 w-100 d-block d-md-none">
+        СТАТЬ УЧАСТНИКОМ
+      </button>
+    </div>
+  </div>
 
-<section class="sale">
-  <div class="sale-blackBg"></div>
-  <div class="container d-flex justify-content-start align-items-center position-relative">
-    <div class="sale-percent">
-      <img src="images/ellipse.svg" alt="ellipse" width="289" height="289" class="sale-percent-ellipse">
-      <span class="fs-90 d-block lh-100 c-white">0.02%</span>
-      <span class="lh-39 c-white">
-        русского искусства <br>
+  <header>
+    <div class="container pt-220">
+      <div class="row ">
+        <div class="col-12 col-md-6">
+          <h1 class="fs-30 fs-md-50 fs-xl-80 c-black text-uppercase">
+            Онлайн акселератор <br>
+            для <span class="text-gradient fs-30 fs-md-50 fs-xl-80">художников</span>
+          </h1>
+          <h3 class="mt-18 mt-lg-45  fs-lg-32 mb-0">
+            Помогаем талантливым художникам <br>
+            стать звездами
+          </h3>
+          <button class="btn btn-black mt-18 mt-lg-50 fs-20 fs-lg-30 px-5">
+            СТАТЬ УЧАСТНИКОМ
+          </button>
+        </div>
+        <div class="col-12 col-md-6">
+          <img src="images/Woman-drawing-on-a-graphic-tablet.png" alt="Woman drawing on a graphic tablet"
+               width="1283"
+               height="684"
+               class="w-100 h-auto mt-50 header-image">
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <section class="sale">
+    <div class="sale-blackBg"></div>
+    <div class="container d-flex justify-content-start align-items-center position-relative">
+      <div class="sale-percent">
+        <img src="images/ellipse.svg" alt="ellipse" width="289" height="289" class="sale-percent-ellipse d-none d-lg-block">
+        <span class="fs-40 fs-lg-90 d-block lh-25 lh-lg-100 c-white mt-2 mt-lg-0">0.02%</span>
+        <span class="lh-39 c-white">
+        русского искусства <br class="d-none d-lg-block">
         на мировом рынке
       </span>
-    </div>
-
-    <p class="mb-0 sale-text">
-      Начинающие художники мало востребованы на международной, а также внутренней арене творческого мира
-    </p>
-  </div>
-</section>
-
-<section class="the-reason-was">
-  <div class="container">
-    <div class="row">
-      <div class="col-7">
-        <h3 class="position-relative fs-36 fw-bold mb-40 text-uppercase">
-          Причиной тому стали:
-          <img src="images/vector-blue.svg" alt="vector" width="370" height="9" class="position-absolute left-0 top-40">
-        </h3>
-        <ul class="fs-30 list-unstyled">
-          <li>
-            Проблема позиционирования и продвижения молодых авторов
-          </li>
-          <li>
-            Неорганизованность художников
-          </li>
-        </ul>
-        <p class="fs-30 mt-60">
-          <b>ArtHall.Synergy</b> - платформа, которая поможет начинающему мастеру стать известным и раскрыть в себе настоящего профессионала своего дела
-        </p>
-        <button class="btn btn-black mt-36 fs-26">
-          СТАТЬ УЧАСТНИКОМ
-        </button>
       </div>
-      <div class="col-5 d-flex justify-content-end align-items-center">
-        <img src="images/the-reason-was.png" alt="Причиной тому стали" width="562" height="492" class="w-100 h-auto">
-      </div>
+
+      <p class="mb-0 sale-text d-none d-lg-block">
+        Начинающие художники мало востребованы на международной, а также внутренней арене творческого мира
+      </p>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="how-working mt-50">
-  <div class="container">
-    <h3 class="position-relative fs-36 fw-bold text-uppercase">
-      как работает платформа
-      <img src="images/vector-pink.svg" alt="vector" width="437" height="11" class="position-absolute left-0 top-40">
-    </h3>
-    <p class="mw-677 fs-24 mt-25 font-fira-sans">
-      На платформе Synergy вы найдете два трека: <b>личный бренд</b> и <b>продвижение</b>. Каждый этап предлагает решение конкретных задач, которые в дальнейшем приведут вас к желаемой цели - стать известным художником!
-    </p>
-  </div>
-  <div class="container how-working-famousArtist">
-    <div class="row align-items-end">
-      <div class="col-3">
-        <img src="images/junior.svg" alt="junior" width="424" height="407" class="w-100 h-auto">
-      </div>
-      <div class="col-9">
-        <img src="images/famous-artist.svg" alt="famous-artist" width="1148" height="638" class="w-100 h-auto">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="about-us">
-  <div class="container position-relative">
-    <img src="images/blur.svg" alt="blur" width="1291" height="1259" class="about-us-blur" >
-    <img src="images/ellipse-2.svg" alt="blur" width="289" height="289" class="about-us-ellipse" >
-    <div class="d-flex justify-content-start align-items-start">
-      <img src="images/icons/comma.svg" alt="coma" width="116" height="116" class="me-82">
-       <div>
-         <p class="fs-26 c-white fst-italic">
-           “Идея АrtHall, глобального сетевого агрегатора современного российского искусства, - давно назревшая, очевидная, но до сих пор не воплощённая.
-           <br>
-           <br>
-           Удастся ли осуществить её на уровне горизонтальных усилий - большой вопрос. Проявит ли власть интерес к проекту, который ставит целью объединить мастеров из разрозненных творческих союзов (чьи сайты, как известно, не выдерживают критики) - объединить, чтобы представлять на мировом уровне, поддерживать в том числе и позиционированием на арт-рынках, - спрогнозировать невозможно. Но нет сомнений, что рано или поздно подобный портал будет создан и изменит жизнь российских художников к лучшему.”
-         </p>
-
-         <div class="d-flex justify-content-start align-items-center mt-57">
-           <img src="images/sergei-stupin.png" alt="Avatar Sergei Stupin" width="50"
-            height="50" class="me-3">
-           <div class="fs-22">
-             <p class="c-white mb-0 fw-400">
-               Сергей Ступин
-             </p>
-             <p class="c-white-600 mb-0 fw-400">
-               Член-корреспондент Российской академии художеств,
-               кандидат философских наук
-             </p>
-           </div>
-         </div>
-       </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="online mt-111">
-  <div class="container">
-    <div class="d-flex justify-content-between align-items-center">
-      <img src="images/online-arthall-logo.svg" alt="online arthall" width="230" height="231" class="me-53">
-      <div class="online-texts">
-        <h3 class="fs-58 mb-26">Стань частью галереи <b>ArtHall</b></h3>
-        <p class="fs-34 font-fira-sans">
-          Успешно заверши все этапы и получи возможность опубликовать свои работы в онлайн-галерее Arthall.Online
-        </p>
-      </div>
-      <img src="images/man-working-at-a-computer.png" alt="man-working-at-a-computer" width="481" height="368">
-    </div>
-  </div>
-</section>
-
-<section class="selection-process">
-  <div class="container pt-5 pb-5">
-    <img src="images/selection-process-bg.svg" alt="selection-process-bg" width="1941" height="460" class="selection-process-fon">
-    <h3 class="position-relative fs-36 fw-bold text-uppercase">
-      КАК проходит отбор
-      <img src="images/vectop-rink-1.svg" alt="vector" width="345" height="10" class="position-absolute left-0 top-40">
-    </h3>
-    <div class="row mt-73">
-      <div class="col-3">
-        <div class="selection-process-item">
-          <div class="selection-process-item-count">1</div>
-          <h3 class="fs-28 fw-bold">РЕГИСТРАЦИЯ</h3>
-          <p class="fs-22 fw-light text-uppercase lh-22">
-            кратко опиши свою концепцию и предоставь работы
+  <section class="the-reason-was">
+    <div class="container">
+      <p class="mb-22 mt-20 fs-18 font-fira-sans d-block d-lg-none">
+        Начинающие художники мало востребованы на международной, а также внутренней арене творческого мира
+      </p>
+      <div class="row">
+        <div class="col-8 col-md-7">
+          <h3 class="position-relative fs-25 fs-md-36 fw-bold mb-40 text-uppercase">
+            Причиной тому стали:
+            <img src="images/vector-blue.svg" alt="vector" width="370" height="9"
+                 class="position-absolute left-0 top-40 w-240 w-md-370">
+          </h3>
+          <ul class="fs-18 fs-md-30 list-unstyled">
+            <li class="d-flex justify-content-start align-items-start">
+              <span class="icon-ellipse me-2 c-purple fs-7 fs-md-10 !mt-6 mt-md-3"></span>
+              Проблема позиционирования и продвижения молодых авторов
+            </li>
+            <li class="d-flex justify-content-start align-items-start">
+              <span class="icon-ellipse me-2 c-purple fs-7 fs-md-10 !mt-6 mt-md-3"></span>
+              Неорганизованность художников
+            </li>
+          </ul>
+          <p class="fs-18 fs-md-30 mt-30 mt-md-60">
+            <b>ArtHall.Synergy</b> - платформа, которая поможет начинающему мастеру стать известным и раскрыть в себе
+            настоящего профессионала своего дела
           </p>
+          <button class="btn btn-black mt-25 mt-md-36 fs-18 fs-md-26">
+            СТАТЬ УЧАСТНИКОМ
+          </button>
         </div>
-      </div>
-      <div class="col-3">
-        <div class="selection-process-item">
-          <div class="selection-process-item-count">2</div>
-          <h3 class="fs-28 fw-bold">SYNERGY</h3>
-          <p class="fs-22 fw-light text-uppercase lh-22">
-            пройди все этапы, которые предлагает платформа
-          </p>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="selection-process-item">
-          <div class="selection-process-item-count">3</div>
-          <h3 class="fs-28 fw-bold">Отбор</h3>
-          <p class="fs-22 fw-light text-uppercase lh-22">
-            набери наибольшее количество голосов от экспертов и аудитории
-          </p>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="selection-process-item">
-          <div class="selection-process-item-count">4</div>
-          <h3 class="fs-28 fw-bold">РЕЗУЛЬТАТ</h3>
-          <p class="fs-22 fw-light text-uppercase lh-22">
-            получи доступ к онлайн-галерее и продавай свои работы
-          </p>
+        <div class="col-4 col-md-5 d-flex justify-content-end align-items-center">
+          <img src="images/the-reason-was.png" alt="Причиной тому стали" width="562" height="492" class="w-100 h-auto">
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="mt-150">
-  <div class="container text-center">
-    <h3 class="fs-44 fw-bold">Хочешь стать участником? </h3>
-    <p class="fs-24 mt-10 fw-600">Подайте заявку сейчас, пройдите отбор и получите доступ к платформе </p>
-    <button class="btn btn-black fs-26 fw-bold mt-37 pt-26 pb-26 pe-44 ps-44">СТАТЬ УЧАСТНИКОМ</button>
-  </div>
-</section>
+  <section class="how-working mt-50">
+    <div class="container">
+      <h3 class="position-relative fs-22 fs-md-36 fw-bold text-uppercase">
+        как работает платформа
+        <img src="images/vector-pink.svg" alt="vector" width="437" height="11" class="position-absolute left-0 top-35 top-md-40 w-300 w-md-437">
+      </h3>
+      <p class="mw-677 fs-18 fs-md-24 mt-25 font-fira-sans">
+        На платформе Synergy вы найдете два трека: <b>личный бренд</b> и <b>продвижение</b>. Каждый этап предлагает
+        решение конкретных задач, которые в дальнейшем приведут вас к желаемой цели - стать известным художником!
+      </p>
+    </div>
+    <div class="overflow-y-auto">
+      <div class="container how-working-famousArtist">
+        <div class="row align-items-end">
+          <div class="col-3 d-none d-lg-block">
+            <img src="images/junior.svg" alt="junior" width="424" height="407" class="w-100 h-auto">
+          </div>
+          <div class="col-12 col-lg-9">
+            <img src="images/famous-artist.svg" alt="famous-artist" width="1148" height="638" class="w-100 h-auto">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <section class="about-us">
+    <div class="container position-relative">
+      <img src="images/blur.svg" alt="blur" width="1291" height="1259" class="about-us-blur">
+      <img src="images/ellipse-2.svg" alt="blur" width="289" height="289" class="about-us-ellipse">
+      <div class="d-flex justify-content-start align-items-start">
+        <img src="images/icons/comma.svg" alt="coma" width="116" height="116" class="me-20 me-md-82 w-49 h-49 w-md-116 h-md-116">
+        <div>
+          <p class="fs-18 fs-md-26 c-white fst-italic">
+            “Идея АrtHall, глобального сетевого агрегатора современного российского искусства, - давно назревшая,
+            очевидная, но до сих пор не воплощённая.
+            <br>
+            <br>
+            Удастся ли осуществить её на уровне горизонтальных усилий - большой вопрос. Проявит ли власть интерес к
+            проекту, который ставит целью объединить мастеров из разрозненных творческих союзов (чьи сайты, как
+            известно, не выдерживают критики) - объединить, чтобы представлять на мировом уровне, поддерживать в том
+            числе и позиционированием на арт-рынках, - спрогнозировать невозможно. Но нет сомнений, что рано или поздно
+            подобный портал будет создан и изменит жизнь российских художников к лучшему.”
+          </p>
+
+          <div class="d-flex justify-content-start align-items-center mt-57">
+            <img src="images/sergei-stupin.png" alt="Avatar Sergei Stupin" width="50"
+                 height="50" class="me-3">
+            <div class="fs-18 fs-md-22">
+              <p class="c-white mb-0 fw-400">
+                Сергей Ступин
+              </p>
+              <p class="c-white-600 mb-0 fw-400">
+                Член-корреспондент Российской академии художеств,
+                кандидат философских наук
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
+  <section class="online mt-111">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <img src="images/online-arthall-logo.svg" alt="online arthall" width="230" height="231" class="me-53">
+        <div class="online-texts">
+          <h3 class="fs-58 mb-26">Стань частью галереи <b>ArtHall</b></h3>
+          <p class="fs-34 font-fira-sans">
+            Успешно заверши все этапы и получи возможность опубликовать свои работы в онлайн-галерее Arthall.Online
+          </p>
+        </div>
+        <img src="images/man-working-at-a-computer.png" alt="man-working-at-a-computer" width="481" height="368">
+      </div>
+    </div>
+  </section>
 
-<script src="js/script.js"></script>
+  <section class="selection-process">
+    <div class="container pt-5 pb-5">
+      <img src="images/selection-process-bg.svg" alt="selection-process-bg" width="1941" height="460"
+           class="selection-process-fon">
+      <h3 class="position-relative fs-36 fw-bold text-uppercase">
+        КАК проходит отбор
+        <img src="images/vectop-rink-1.svg" alt="vector" width="345" height="10"
+             class="position-absolute left-0 top-40">
+      </h3>
+      <div class="row mt-73">
+        <div class="col-3">
+          <div class="selection-process-item">
+            <div class="selection-process-item-count">1</div>
+            <h3 class="fs-28 fw-bold">РЕГИСТРАЦИЯ</h3>
+            <p class="fs-22 fw-light text-uppercase lh-22">
+              кратко опиши свою концепцию и предоставь работы
+            </p>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="selection-process-item">
+            <div class="selection-process-item-count">2</div>
+            <h3 class="fs-28 fw-bold">SYNERGY</h3>
+            <p class="fs-22 fw-light text-uppercase lh-22">
+              пройди все этапы, которые предлагает платформа
+            </p>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="selection-process-item">
+            <div class="selection-process-item-count">3</div>
+            <h3 class="fs-28 fw-bold">Отбор</h3>
+            <p class="fs-22 fw-light text-uppercase lh-22">
+              набери наибольшее количество голосов от экспертов и аудитории
+            </p>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="selection-process-item">
+            <div class="selection-process-item-count">4</div>
+            <h3 class="fs-28 fw-bold">РЕЗУЛЬТАТ</h3>
+            <p class="fs-22 fw-light text-uppercase lh-22">
+              получи доступ к онлайн-галерее и продавай свои работы
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-150">
+    <div class="container text-center">
+      <h3 class="fs-44 fw-bold">Хочешь стать участником? </h3>
+      <p class="fs-24 mt-10 fw-600">Подайте заявку сейчас, пройдите отбор и получите доступ к платформе </p>
+      <button class="btn btn-black fs-26 fw-bold mt-37 pt-26 pb-26 pe-44 ps-44">СТАТЬ УЧАСТНИКОМ</button>
+    </div>
+  </section>
+
+
+  <section class="slider mt-152">
+    <div class="container">
+      <div class="slider-item mb-75">
+        <div class="slider-item-title">
+          <div class="d-flex justify-content-between align-items-center w-400">
+            <h3 class="position-relative fs-36 fw-bold text-uppercase">
+              СМИ о нас
+              <img src="images/vector-pink-min.svg" alt="vector" width="170" height="9"
+                   class="position-absolute left-0 top-40">
+            </h3>
+            <span class="icon-common fs-50 c-pink"></span>
+          </div>
+          <div class="slider-item-title-pagination">1/5</div>
+        </div>
+        <div class="slider-item-slide">
+          <div class="slider-item-slide-texts">
+            <div class="slider-item-slide-texts-item font-fira-sans">
+              «Перед творческими людьми стоит сложная задача доставить свой контент до потребителя, и в этом им могут
+              помочь технологии»
+            </div>
+            <div class="slider-item-slide-texts-item font-fira-sans">
+             2
+            </div>
+            <div class="slider-item-slide-texts-item font-fira-sans">
+             3
+            </div>
+            <div class="slider-item-slide-texts-item font-fira-sans ">
+             4
+            </div>
+            <div class="slider-item-slide-texts-item font-fira-sans ">
+             5
+            </div>
+          </div>
+          <div class="mt-130">
+            <div>
+              <div class="fs-24 c-black-500 font-fira-sans">17.10.2023</div>
+              <div class="d-flex">
+                <button class="btn btn-outline-dark me-2 slider-item-prev">
+                  <span class="icon-left"></span>
+                </button>
+                <button class="btn btn-outline-dark slider-item-next">
+                  <span class="icon-right"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-item">
+        <div class="slider-item-title">
+          <div class="d-flex justify-content-between align-items-center w-400">
+            <h3 class="position-relative fs-36 fw-bold text-uppercase">
+              СМИ о нас
+              <img src="images/vector-pink-min.svg" alt="vector" width="170" height="9"
+                   class="position-absolute left-0 top-40">
+            </h3>
+            <span class="icon-common fs-50 c-pink"></span>
+          </div>
+          <div class="slider-item-title-pagination">1/5</div>
+        </div>
+        <div class="slider-item-slide">
+          <div class="slider-item-slide-texts">
+            <div class="slider-item-slide-texts-item font-fira-sans">
+              «Перед творческими людьми стоит сложная задача доставить свой контент до потребителя, и в этом им могут
+              помочь технологии»
+            </div>
+            <div class="slider-item-slide-texts-item font-fira-sans">
+             2
+            </div>
+            <div class="slider-item-slide-texts-item font-fira-sans">
+             3
+            </div>
+            <div class="slider-item-slide-texts-item font-fira-sans ">
+             4
+            </div>
+            <div class="slider-item-slide-texts-item font-fira-sans ">
+             5
+            </div>
+          </div>
+          <div class="mt-130">
+            <div>
+              <div class="fs-24 c-black-500 font-fira-sans">17.10.2023</div>
+              <div class="d-flex">
+                <button class="btn btn-outline-dark me-2 slider-item-prev">
+                  <span class="icon-left"></span>
+                </button>
+                <button class="btn btn-outline-dark slider-item-next">
+                  <span class="icon-right"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex justify-content-start align-items-center">
+          <img src="images/footter-logo-site.svg" alt="logo ArtHall" width="233" height="64" class="me-71">
+          <a href="#" class="fs-22 font-fira-sans c-white d-flex justify-content-start align-items-center fw-light me-35">
+            ПОДДЕРЖКА
+            <img src="images/icons/open-link.svg" alt="open link" width="16" height="16" class="ms-2 mb-1">
+          </a>
+          <a href="#" class="fs-22 font-fira-sans c-white d-flex justify-content-start align-items-center fw-light">
+            ОФЕРТА
+            <img src="images/icons/open-link.svg" alt="open link" width="16" height="16" class="ms-2 mb-1">
+          </a>
+        </div>
+        <div class="d-flex justify-content-end align-items-center fs-22 fw-500 c-white">
+          МЫ В СОЦ.СЕТЯХ:
+          <a href="#" class="soc-site ms-16 me-13">
+            <span class="icon-vk fs-20 c-white"></span>
+          </a>
+          <a href="#" class="soc-site">
+            <span class="icon-telegram fs-20 c-white"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
 <script src="js/fastfront.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
