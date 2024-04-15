@@ -149,8 +149,8 @@ header {
 }
 @media (max-width: 576px) {
   header {
-    background: url(../images/header-bg.png) no-repeat 70% top;
-    background-size: 2556px auto;
+    background: url(../images/header-bg.png) no-repeat 70% 3%;
+    background-size: 1746px auto;
     padding-bottom: 20rem;
   }
 }
@@ -346,6 +346,12 @@ header {
   background: rgb(255, 255, 255);
   position: relative;
   height: 10.5625rem;
+}
+@media (max-width: 768px) {
+  .selection-process-item {
+    padding: 1.8rem 1.275rem 1.275rem;
+    height: 12.5625rem;
+  }
 }
 .selection-process-item-count {
   color: rgb(28, 28, 28);
