@@ -133,25 +133,19 @@ header {
   width: 100%;
   background: url("../images/header-bg.png") no-repeat center top;
   background-size: 3476px auto;
-  padding-bottom: 25rem;
-}
-@media (max-width: 992px) {
-  header {
-    padding-bottom: 12rem;
-  }
+  padding-bottom: 35rem;
+  position: relative;
 }
 @media (max-width: 768px) {
   header {
-    background: url(../images/header-bg.png) no-repeat 70% top;
-    background-size: 2556px auto;
-    padding-bottom: 25rem;
+    background: url(../images/header-mobile.svg) no-repeat 170% -3rem;
+    background-size: 40rem;
   }
 }
 @media (max-width: 576px) {
   header {
-    background: url(../images/header-bg.png) no-repeat 70% 3%;
-    background-size: 1746px auto;
-    padding-bottom: 20rem;
+    background: url(../images/header-mobile.svg) no-repeat 45% 213%;
+    background-size: 50rem;
   }
 }
 @media (max-width: 768px) {
@@ -164,12 +158,12 @@ header {
   header .header-image {
     transform: scaleX(-1);
     position: absolute;
-    bottom: -27rem;
+    bottom: -21rem;
   }
 }
 @media (max-width: 576px) {
   header .header-image {
-    bottom: -22rem;
+    bottom: -20rem;
   }
 }
 
@@ -189,15 +183,21 @@ header {
   background: rgb(255, 255, 255);
   color: rgb(28, 28, 28);
   font-family: "Fira Sans", sans-serif;
-  position: relative;
-  margin-top: -11.25rem;
-  margin-bottom: 10.625rem;
+  position: absolute;
+  bottom: 14rem;
 }
 @media (max-width: 992px) {
   .sale {
     height: 87px;
     margin-top: 0;
     margin-bottom: 0;
+    background: transparent;
+    bottom: 6rem;
+  }
+}
+@media (max-width: 576px) {
+  .sale {
+    bottom: 6rem;
   }
 }
 .sale-blackBg {
@@ -274,6 +274,10 @@ header {
   font-weight: 500;
   line-height: 2.6875rem;
   max-width: 50.125rem;
+}
+
+.the-reason-was {
+  margin-top: -7.5rem;
 }
 
 .how-working .overflow-y-auto {
@@ -426,11 +430,7 @@ header {
   font-size: 2rem;
   font-weight: 400;
   line-height: 3.40625rem;
-}
-@media (max-width: 768px) {
-  .slider-item-slide-texts-item {
-    height: 14.375rem;
-  }
+  height: 14.375rem;
 }
 @media (max-width: 768px) {
   .slider-item-slide-texts-item {
@@ -468,12 +468,24 @@ header {
 }
 
 footer {
-  background: rgb(64, 64, 64);
+  background: #1C1C1C;
   margin-top: 6.4375rem;
   min-height: 11.0625rem;
   display: flex;
   justify-content: start;
   align-items: center;
+  position: relative;
+}
+footer:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(177.3px);
+  background: linear-gradient(98.3deg, rgb(209, 82, 192) 23.062%, rgb(106, 108, 222) 53.216%);
+  z-index: -1;
 }
 footer .soc-site {
   width: 3.4375rem;
