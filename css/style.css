@@ -135,10 +135,16 @@ header {
   background-size: 3476px auto;
   padding-bottom: 25rem;
 }
+@media (max-width: 992px) {
+  header {
+    padding-bottom: 12rem;
+  }
+}
 @media (max-width: 768px) {
   header {
     background: url(../images/header-bg.png) no-repeat 70% top;
     background-size: 2556px auto;
+    padding-bottom: 25rem;
   }
 }
 @media (max-width: 576px) {
@@ -370,6 +376,7 @@ header {
 @media (max-width: 992px) {
   .slider-item {
     flex-direction: column;
+    padding: 1.1875rem;
   }
 }
 .slider-item-title {
@@ -383,7 +390,8 @@ header {
 }
 @media (max-width: 992px) {
   .slider-item-title {
-    height: 4.75rem;
+    height: 3.75rem;
+    padding-top: 1rem;
   }
 }
 .slider-item-title-pagination {
