@@ -364,8 +364,8 @@ header {
 }
 @media (max-width: 768px) {
   .selection-process-item-count {
-    font-size: 5.5rem;
-    top: -4.225rem;
+    font-size: 5rem;
+    top: -4rem;
   }
 }
 
