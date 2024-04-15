@@ -337,6 +337,13 @@ header {
     top: 5rem;
     width: calc(100% + 18.75rem);
     left: -9.375rem;
+    @media (max-width: $md){
+      width: calc(100% + 30rem);
+      left: -15rem;
+      top: 26rem;
+      transform: scale(8);
+      z-index: -1;
+    }
   }
 
   &-item {
@@ -354,6 +361,10 @@ header {
       position: absolute;
       right: 2.5rem;
       top: -5.625rem;
+      @media (max-width: $md){
+        font-size: 5.5rem;
+        top: -4.225rem;
+      }
     }
   }
 }
@@ -367,18 +378,28 @@ header {
     padding: 2.1875rem;
     @include flex('sb', 's');
 
+    @media (max-width: $lg){
+      flex-direction: column;
+    }
+
     &-title {
       @include flex('sb', 's');
       flex-direction: column;
       height: 20.75rem;
       margin-right: 3.75rem;
       padding-top: 1.25rem;
+      @media (max-width: $lg){
+        height: 4.75rem;
+      }
 
       &-pagination {
         color: rgb(28, 28, 28);
         font-size: 3.4375rem;
         font-weight: 400;
         line-height: 3.40625rem;
+        @media (max-width: $lg){
+          font-size: 1.875rem;
+        }
       }
     }
 
@@ -388,13 +409,21 @@ header {
       width: calc(100% - 28.125rem);
 
       height: 20.75rem;
-
+      @media (max-width: $lg){
+        width: 100%;
+        height: auto;
+      }
       &-texts {
         &-item {
           color: rgb(28, 28, 28);
           font-size: 2rem;
           font-weight: 400;
           line-height: 3.40625rem;
+
+          @media (max-width: $md) {
+            font-size: 1.125rem;
+            line-height: 1.375rem;
+          }
         }
       }
 
@@ -406,10 +435,21 @@ header {
         width: 3.4375rem;
         height: 3.4375rem;
 
+
+        @media (max-width: $md) {
+          width: 35px;
+          height: 35px;
+        }
         span {
           position: relative;
           top: 3px;
           font-size: 1.875rem;
+          @media (max-width: $md) {
+            top: 2px;
+            font-size: 18px;
+            left: -2px;
+          }
+
         }
 
         &:hover {

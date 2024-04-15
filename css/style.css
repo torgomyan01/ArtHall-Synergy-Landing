@@ -320,6 +320,15 @@ header {
   width: calc(100% + 18.75rem);
   left: -9.375rem;
 }
+@media (max-width: 768px) {
+  .selection-process-fon {
+    width: calc(100% + 30rem);
+    left: -15rem;
+    top: 26rem;
+    transform: scale(8);
+    z-index: -1;
+  }
+}
 .selection-process-item {
   border-radius: 12px;
   padding: 1.875rem;
@@ -336,6 +345,12 @@ header {
   right: 2.5rem;
   top: -5.625rem;
 }
+@media (max-width: 768px) {
+  .selection-process-item-count {
+    font-size: 5.5rem;
+    top: -4.225rem;
+  }
+}
 
 .slider-item {
   box-sizing: border-box;
@@ -347,6 +362,11 @@ header {
   justify-content: space-between;
   align-items: start;
 }
+@media (max-width: 992px) {
+  .slider-item {
+    flex-direction: column;
+  }
+}
 .slider-item-title {
   display: flex;
   justify-content: space-between;
@@ -356,21 +376,43 @@ header {
   margin-right: 3.75rem;
   padding-top: 1.25rem;
 }
+@media (max-width: 992px) {
+  .slider-item-title {
+    height: 4.75rem;
+  }
+}
 .slider-item-title-pagination {
   color: rgb(28, 28, 28);
   font-size: 3.4375rem;
   font-weight: 400;
   line-height: 3.40625rem;
 }
+@media (max-width: 992px) {
+  .slider-item-title-pagination {
+    font-size: 1.875rem;
+  }
+}
 .slider-item-slide {
   width: calc(100% - 28.125rem);
   height: 20.75rem;
+}
+@media (max-width: 992px) {
+  .slider-item-slide {
+    width: 100%;
+    height: auto;
+  }
 }
 .slider-item-slide-texts-item {
   color: rgb(28, 28, 28);
   font-size: 2rem;
   font-weight: 400;
   line-height: 3.40625rem;
+}
+@media (max-width: 768px) {
+  .slider-item-slide-texts-item {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
 }
 .slider-item-slide .slick-dots {
   display: none !important;
@@ -379,10 +421,23 @@ header {
   width: 3.4375rem;
   height: 3.4375rem;
 }
+@media (max-width: 768px) {
+  .slider-item-slide .btn-outline-dark {
+    width: 35px;
+    height: 35px;
+  }
+}
 .slider-item-slide .btn-outline-dark span {
   position: relative;
   top: 3px;
   font-size: 1.875rem;
+}
+@media (max-width: 768px) {
+  .slider-item-slide .btn-outline-dark span {
+    top: 2px;
+    font-size: 18px;
+    left: -2px;
+  }
 }
 .slider-item-slide .btn-outline-dark:hover span {
   color: #fff !important;
