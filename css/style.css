@@ -136,10 +136,18 @@ header {
   padding-bottom: 35rem;
   position: relative;
 }
+@media (max-width: 992px) {
+  header {
+    background: url(../images/header-mobile.svg) no-repeat 39% -3rem;
+    background-size: 80rem;
+    padding-bottom: 25rem;
+  }
+}
 @media (max-width: 768px) {
   header {
     background: url(../images/header-mobile.svg) no-repeat 170% -3rem;
     background-size: 40rem;
+    padding-bottom: 35rem;
   }
 }
 @media (max-width: 576px) {
@@ -158,7 +166,7 @@ header {
   header .header-image {
     transform: scaleX(-1);
     position: absolute;
-    bottom: -21rem;
+    bottom: -27rem;
   }
 }
 @media (max-width: 576px) {
@@ -186,13 +194,18 @@ header {
   position: absolute;
   bottom: 14rem;
 }
+@media (max-width: 1199px) {
+  .sale {
+    bottom: 9rem;
+  }
+}
 @media (max-width: 992px) {
   .sale {
     height: 87px;
     margin-top: 0;
     margin-bottom: 0;
     background: transparent;
-    bottom: 6rem;
+    bottom: 0;
   }
 }
 @media (max-width: 576px) {
@@ -279,6 +292,16 @@ header {
 .the-reason-was {
   margin-top: -7.5rem;
 }
+@media (max-width: 992px) {
+  .the-reason-was {
+    margin-top: 0;
+  }
+}
+@media (max-width: 576px) {
+  .the-reason-was {
+    margin-top: -7.5rem;
+  }
+}
 
 .how-working .overflow-y-auto {
   overflow-y: unset !important;
@@ -354,7 +377,6 @@ header {
 @media (max-width: 768px) {
   .selection-process-item {
     padding: 1.8rem 1.275rem 1.275rem;
-    height: 12.5625rem;
   }
 }
 .selection-process-item-count {
