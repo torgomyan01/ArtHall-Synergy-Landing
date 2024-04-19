@@ -591,11 +591,11 @@ footer .soc-site {
 .mobile-menu-board span {
   transition: 0.3s;
   width: 100%;
-  height: 2px;
-  border-radius: 3px;
+  height: 2.5px;
   margin-bottom: 8px;
   background-color: #1C1C1C;
   position: relative;
+  border-radius: 5px;
 }
 .mobile-menu-board span:last-child {
   margin: 0;
