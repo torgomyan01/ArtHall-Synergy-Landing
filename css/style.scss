@@ -98,6 +98,12 @@ $navHeight: 6.4375rem;
   &.active {
     background: #fff;
   }
+
+  .container{
+    @media (max-width: $md){
+      padding: 0 17px;
+    }
+  }
 }
 
 .mobile-menu {

@@ -87,6 +87,11 @@ a {
 .navbar.active {
   background: #fff;
 }
+@media (max-width: 768px) {
+  .navbar .container {
+    padding: 0 17px;
+  }
+}
 
 .mobile-menu {
   position: fixed;
