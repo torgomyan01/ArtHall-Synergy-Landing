@@ -57,6 +57,10 @@ mobileMenu.on('click', function (){
     }
 })
 
+$('.mobile-menu-fon').on('click', function (){
+    closeMobileMenu();
+})
+
 
 
 function openMobileMenu(){
