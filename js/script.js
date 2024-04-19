@@ -11,12 +11,14 @@ const {
     container,
     mobileMenu,
     _menu,
+    mobileMenuFon,
     navbar
 } = {
     saleBlackBg: $('.sale-blackBg'),
     container: $('.container'),
     mobileMenu: $('.mobile-menu-board'),
     _menu: $('.mobile-menu'),
+    mobileMenuFon: $('.mobile-menu-fon'),
     navbar: $('.navbar')
 }
 
@@ -61,6 +63,7 @@ function openMobileMenu(){
     $('body').addClass('overflow-hidden');
     mobileMenu.addClass(active);
     _menu.addClass(active);
+    mobileMenuFon.addClass(active);
     navbar.addClass(active);
 }
 
@@ -68,6 +71,7 @@ function closeMobileMenu(){
     $('body').removeClass('overflow-hidden');
     mobileMenu.removeClass(active);
     _menu.removeClass(active);
+    mobileMenuFon.removeClass(active);
     navbar.removeClass(active);
 }
 

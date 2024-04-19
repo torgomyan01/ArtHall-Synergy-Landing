@@ -75,6 +75,7 @@ a {
 
 .btn {
   border-radius: 6px;
+  font-family: "Fira Sans", serif;
 }
 
 .font-fira-sans {
@@ -111,6 +112,25 @@ $navHeight: 6.4375rem;
   opacity: 0;
   transition: 0.3s ease-out;
 
+  &.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+.mobile-menu-fon{
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #00000061;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  backdrop-filter: blur(3px);
+  transition: 0.3s opacity;
+  opacity: 0;
+  transform: translateY(-100%);
   &.active {
     opacity: 1;
     transform: translateY(0);
@@ -333,6 +353,12 @@ header {
     right: -38.75rem;
     top: -28.125rem;
     z-index: -1;
+    @media (max-width: $md){
+      transform: scale(0.5);
+      right: -63.75rem;
+      top: -32.125rem;
+    }
+
   }
 
   &-ellipse {
@@ -341,12 +367,20 @@ header {
     bottom: -21.25rem;
     width: 31.125rem;
     height: 31.125rem;
+    @media (max-width: $lg){
+      transform: scale(0.8);
+    }
   }
 }
 
 .online {
   &-texts {
     margin-right: -3.125rem;
+  }
+  &-man-working{
+    @media (max-width: $sm){
+      transform: scale(1.8) translate(-20px, 6px);
+    }
   }
 }
 
@@ -367,6 +401,11 @@ header {
       transform: scale(8);
       z-index: -1;
     }
+    @media (max-width: $sm){
+      left: -15rem;
+      top: 9rem;
+      transform: scale(3);
+    }
   }
 
   &-item {
@@ -374,7 +413,7 @@ header {
     padding: 1.875rem;
     background: rgb(255, 255, 255);
     position: relative;
-    height: 10.5625rem;
+    height: 100%;
     @media (max-width: $md){
       padding: 1.8rem 1.275rem 1.275rem;
     }
